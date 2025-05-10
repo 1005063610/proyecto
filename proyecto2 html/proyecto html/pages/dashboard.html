@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <h2>Bienvenido</h2>
+    <p id="userInfo"></p>
+    <button id="logout">Cerrar Sesión</button>
+    <button id="descargarExcel">Descargar Datos en Excel</button>
+
+    <!-- ✅ Mensaje de error -->
+    <p id="mensajeError" style="color: red; font-weight: bold;"></p>
+
+    <h2>Lista de Clientes</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Usuario</th>
+                <th>Nombre</th>
+                <th>Empresa</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="clientesTable"></tbody>
+    </table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/export.js"></script>
+</body>
+</html>
+
+
+
+
+
